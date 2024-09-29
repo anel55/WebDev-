@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    grid-template-columns: 1fr;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+
+/* Hobbies styles */
+#hobbies ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#hobbies li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+#hobbies img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Fun Facts table */
+#facts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#facts table, #facts th, #facts td {
+    border: 1px solid #ddd;
+}
+
+#facts th, #facts td {
+    padding: 10px;
+    text-align: left;
+}
+
+#facts th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
