@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ff99cc;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    transition: background-color 0.5s ease;
+}
+
+header:hover {
+    background-color: #e68a9e;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fff7f7;
+}
+
+/* Section titles */
+h2 {
+    color: #cc6699;
+    font-weight: 600;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff99cc;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Me Section */
+#about p {
+    text-align: center;
+    color: #5c5c5c;
+}
+
+/* Skills Section */
+#skills .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills .card:hover {
+    background-color: #ffe6e6;
+}
+
+#skills .card-title {
+    color: #cc6699;
+    font-weight: bold;
+}
+
+/* Experience and Education Sections */
+.list-group-item {
+    background-color: #ffccff;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.list-group-item h4 {
+    color: #b3597b;
+}
+
+/* Projects Section */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #cc6699;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffccff;
+    padding: 4rem 0;
+}
+
+#contact input, #contact textarea {
+    border-radius: 0;
+    border: 1px solid #ff99cc;
+    margin-bottom: 15px;
+}
+
+#contact .btn {
+    background-color: #cc6699;
+    color: white;
+    border: none;
+}
+
+#contact .btn:hover {
+    background-color: #b3597b;
+}
+
+#contact a {
+    color: #cc6699;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #b3597b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #cc6699;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #skills .card-title {
+        font-size: 1.1rem;
+    }
+}
