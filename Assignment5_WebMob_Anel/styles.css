@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/9674078.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.767);
+}
+
+.xylophone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.key {
+    width: 200px;
+    height: 60px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+}
+
+.key:active {
+    transform: scale(0.95);
+}
+
+
+.key[data-note="C"] {
+    background-color: #FF5733;
+}
+
+.key[data-note="D"] {
+    background-color: #FFBD33;
+}
+
+.key[data-note="E"] {
+    background-color: #DBFF33;
+}
+
+.key[data-note="F"] {
+    background-color: #75FF33;
+}
+
+.key[data-note="G"] {
+    background-color: #33FF57;
+}
+
+.key[data-note="A"] {
+    background-color: #33FFBD;
+}
+
+.key[data-note="B"] {
+    background-color: #339FFF;
+}
