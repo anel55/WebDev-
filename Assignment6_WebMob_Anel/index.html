@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="cover" src="Image/1.jpg" alt="Track Cover">
+        <div class="controls">
+            <button id="play-pause">Play</button>
+            <button id="next">Next</button>
+        </div>
+        <div class="track-info">
+            <h2 id="track-name">Sunflower</h2>
+        </div>
+        <ul id="track-list">
+            <li onclick="playTrack(0)">Sunflower</li>
+            <li onclick="playTrack(1)">Please Please PLease</li>
+            <li onclick="playTrack(2)">Die with a smile</li>
+            <li onclick="playTrack(3)">Fe!n</li>
+        </ul>
+        <audio id="audio-player" src="Music/1.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
